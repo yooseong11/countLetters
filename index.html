@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>글자수세기</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <img src="./img/lemon.png" alt="" style="width: 25px; height: 25px" />
+        <span>글자수세기</span>
+      </h1>
+      <a href="#"> <img src="" alt="" /></a>
+    </header>
+    <main>
+      <section>
+        <div>
+          <p>공백포함</p>
+          <p id="letters">10000</p>
+          <p><span id="byte">175 </span> byte</p>
+        </div>
+        <div>
+          <p>공백제외</p>
+          <p id="trim_letters">10000</p>
+          <p><span id="trim_byte">175 </span> byte</p>
+        </div>
+      </section>
+      <section>
+        <textarea name="tbox" id="tbox" cols="30" rows="10"></textarea>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <button id="btn_copy">전체복사</button>
+        <button id="btn_remove">전체 지우기</button>
+      </div>
+    </footer>
+  </body>
+</html>
