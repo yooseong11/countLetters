@@ -28,3 +28,10 @@ textarea,
 button {
   all: unset;
 }
+
+.wrap {
+  width: 390px;
+  padding: 0 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
