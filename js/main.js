@@ -1,11 +1,3 @@
-/* 
-
-
-# textarea (options)
-autofocus, placeholder
-cols="30" rows="10" 기본값 제거
-*/
-
 const tbox = document.querySelector("#tbox");
 const letters = document.querySelector("#letters");
 const byte = document.querySelector("#byte");
@@ -45,3 +37,16 @@ btn_remove.onclick = () => {
     confirm("작성한 내용을 모두 삭제하시겠습니까?") && (tbox.value = "");
   }
 };
+
+// whale api
+whale.sidebarAction.onClicked.addListener(result => {
+  // result.opened: 사이드바가 열렸는지 닫혔는지를 알려주는 boolean 값. 열렸으면 true.
+});
+
+document.addEventListener(`visibilitychange`, function() {
+  if (document.visibilityState === `visible`) {
+      // 사이드바가 열렸을 때
+  } else {
+      // 사이드바가 닫혔을 때
+  }
+});
