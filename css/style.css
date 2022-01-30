@@ -1,0 +1,104 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --gray-100: #00000010;
+  --gray-400: #9d9d9d;
+  --green: #02c95d;
+  --main-padding: 0 30px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+textarea,
+button {
+  all: unset;
+}
+/* header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+  padding: 0 30px;
+}
+h1 {
+  display: flex;
+  align-items: center;
+}
+h1 > span {
+  font-size: 1.2rem;
+  padding: 0 0.2em;
+  margin-bottom: 2px;
+}
+
+/*** main section1 ***/
+main .section1 {
+  display: flex;
+  padding: 0 30px;
+}
+main .section1 div {
+  width: 50%;
+}
+main .section1 div p:nth-child(2) {
+  color: var(--green);
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+main .section1 div p:nth-child(3) {
+  color: var(--gray-400);
+}
+
+/*** main section2 ***/
+main .section2 {
+  border-top: 1px solid var(--gray-100);
+  border-bottom: 1px solid var(--gray-100);
+  margin-top: 20px;
+}
+main .section2 textarea {
+  box-sizing: border-box;
+  padding: 20px 30px;
+  height: 450px;
+  width: 100%;
+}
+textarea::selection {
+  background-color: #02c95d30;
+}
+/* footer */
+footer {
+  margin-top: 60px;
+  padding: 0 30px;
+}
+footer > div {
+  display: flex;
+  height: 60px;
+}
+footer > div > button {
+  flex-basis: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+#btn_copy {
+  background-color: var(--green);
+  color: var(--white);
+}
+#btn_remove {
+  border: 1px solid var(--gray-400);
+  color: var(--gray-400);
+}
