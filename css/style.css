@@ -46,14 +46,6 @@ h1 > span {
   padding: 0 0.2em;
   margin-bottom: 2px;
 }
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
 
 /*** main section1 ***/
 main .section1 {
@@ -89,6 +81,7 @@ main .section2 textarea {
   padding: 20px 30px;
   height: 450px;
   width: 100%;
+  word-break: break-all;
 }
 textarea::selection {
   background-color: #02c95d30;
