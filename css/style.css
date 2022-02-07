@@ -33,23 +33,34 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 55px;
+  height: 70px;
   padding: 0 30px;
 }
 h1 {
   display: flex;
   align-items: center;
+  letter-spacing: -0.025em;
 }
 h1 > span {
   font-size: 1.2rem;
   padding: 0 0.2em;
   margin-bottom: 2px;
 }
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
 
 /*** main section1 ***/
 main .section1 {
   display: flex;
   padding: 0 30px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 main .section1 div {
   width: 50%;
@@ -69,6 +80,9 @@ main .section2 {
   border-top: 1px solid var(--gray-100);
   border-bottom: 1px solid var(--gray-100);
   margin-top: 20px;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  box-shadow: inset rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 main .section2 textarea {
   box-sizing: border-box;
@@ -79,10 +93,12 @@ main .section2 textarea {
 textarea::selection {
   background-color: #02c95d30;
 }
+
 /* footer */
 footer {
   margin-top: 60px;
   padding: 0 30px;
+  font-size: 1.1rem;
 }
 footer > div {
   display: flex;
@@ -101,4 +117,13 @@ footer > div > button {
 #btn_remove {
   border: 1px solid var(--gray-400);
   color: var(--gray-400);
+}
+::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0);
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #02c95d50;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
