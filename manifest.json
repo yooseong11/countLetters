@@ -1,8 +1,14 @@
 {
+  "manifest_version": 2,
+  "name": "글자수 세기",
+  "version": "1.0.0",
+  "description": "글자수를 세주는 사이드 앱",
+  "icons": { "32": "favicon-32x32.png" },
+  "default_locale": "ko",
   "sidebar_action": {
-    "default_page": "sidebar.html",
+    "default_page": "./index.html",
     "default_icon": {
-        "16": "images/icon16.png"
+      "32": "favicon-32x32.png"
     },
     "default_title": "글자수 세기",
     "use_navigation_bar": false

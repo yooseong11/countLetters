@@ -3,6 +3,8 @@ const letters = document.querySelector("#letters");
 const byte = document.querySelector("#byte");
 const trim_letters = document.querySelector("#trim_letters");
 const trim_byte = document.querySelector("#trim_byte");
+const btn_copy = document.querySelector("#btn_copy");
+const btn_remove = document.querySelector("#btn_remove");
 
 const getByteLength = (letters) => {
   let byte = 0;
@@ -24,9 +26,6 @@ tbox.addEventListener("input", (e) => {
 });
 
 // btn footer
-const btn_copy = document.querySelector("#btn_copy");
-const btn_remove = document.querySelector("#btn_remove");
-
 btn_copy.onclick = () => {
   tbox.select();
   document.execCommand("copy");
@@ -34,19 +33,22 @@ btn_copy.onclick = () => {
 
 btn_remove.onclick = () => {
   if (tbox.value.length > 0) {
-    confirm("작성한 내용을 모두 삭제하시겠습니까?") && (tbox.value = "");
+    tbox.value = "";
+    letters.textContent = "0";
+    byte.textContent = "0";
+    trim_letters.textContent = "0";
+    trim_byte.textContent = "0";
   }
 };
 
-// whale api
-whale.sidebarAction.onClicked.addListener(result => {
+whale.sidebarAction.onClicked.addListener((result) => {
   // result.opened: 사이드바가 열렸는지 닫혔는지를 알려주는 boolean 값. 열렸으면 true.
 });
 
-document.addEventListener(`visibilitychange`, function() {
+document.addEventListener(`visibilitychange`, function () {
   if (document.visibilityState === `visible`) {
-      // 사이드바가 열렸을 때
+    // 사이드바가 열렸을 때
   } else {
-      // 사이드바가 닫혔을 때
+    // 사이드바가 닫혔을 때
   }
 });
