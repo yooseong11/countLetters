@@ -41,7 +41,6 @@ btn_remove.onclick = () => {
   }
 };
 
-// whale api
 whale.sidebarAction.onClicked.addListener((result) => {
   // result.opened: 사이드바가 열렸는지 닫혔는지를 알려주는 boolean 값. 열렸으면 true.
 });
