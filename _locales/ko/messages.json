@@ -1,0 +1,10 @@
+{
+  "name": {
+    "message": "글자수세기",
+    "description": "Name of the Counting letters."
+  },
+  "description": {
+    "message": "글자수 세기 확장앱 입니다. 공백 포함, 미포함 된 글자수를 셉니다. 한글은 2자, 영어는 1자, 개행은 카운트하지 않습니다.",
+    "description": "Short description of the Counting letters App."
+  }
+}
