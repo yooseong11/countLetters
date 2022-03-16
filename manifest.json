@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "글자수 세기",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "글자수를 세주는 사이드 앱",
   "icons": { "32": "favicon-32x32.png" },
   "default_locale": "ko",
