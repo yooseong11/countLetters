@@ -2,8 +2,8 @@
   --black: #000;
   --white: #fff;
   --gray-100: #00000010;
-  --gray-400: #9d9d9d;
-  --green: #02c95d;
+  --gray-400: #707070;
+  --green: #00c950;
   --main-padding: 0 30px;
 }
 
@@ -11,6 +11,7 @@ body {
   font-family: "Noto Sans KR", sans-serif;
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
 h1,
@@ -22,6 +23,7 @@ h6,
 p {
   margin: 0;
   padding: 0;
+  font-weight: normal;
 }
 
 textarea,
@@ -33,7 +35,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
+  height: 60px;
   padding: 0 30px;
 }
 h1 {
@@ -42,7 +44,7 @@ h1 {
   letter-spacing: -0.025em;
 }
 h1 > span {
-  font-size: 1.2rem;
+  font-size: 16px;
   padding: 0 0.2em;
   margin-bottom: 2px;
 }
@@ -52,28 +54,39 @@ main .section1 {
   display: flex;
   padding: 0 30px;
   font-size: 1.125rem;
-  line-height: 1.75rem;
 }
-main .section1 div {
-  width: 50%;
+main .section1 > div {
+  width: 100%;
+  padding: 12px;
+  border-right: 1px solid var(--grar-400);
 }
-main .section1 div p:nth-child(2) {
+main .section1 div p:nth-child(1) {
   color: var(--green);
   font-weight: bold;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 20px;
 }
-main .section1 div p:nth-child(3) {
+main .section1 div p:nth-child(2) {
   color: var(--gray-400);
+  font-size: 14px;
 }
-
+.letterinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 8px 0;
+}
+#letters{
+  font-size: 24px;
+}
+#trim_letters{
+  font-size: 24px;
+}
 /*** main section2 ***/
 main .section2 {
   border-top: 1px solid var(--gray-100);
   border-bottom: 1px solid var(--gray-100);
   margin-top: 20px;
   font-size: 1rem;
-  line-height: 1.75rem;
   box-shadow: inset rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 main .section2 textarea {
@@ -89,7 +102,7 @@ textarea::selection {
 
 /* footer */
 footer {
-  margin-top: 60px;
+  margin-top: 30px;
   padding: 0 30px;
   font-size: 1.1rem;
 }
@@ -97,7 +110,7 @@ footer > div {
   display: flex;
   height: 60px;
 }
-footer > div > button {
+footer div  button {
   flex-basis: 100%;
   text-align: center;
   box-sizing: border-box;
