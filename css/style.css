@@ -120,3 +120,11 @@ footer > div > button {
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
+
+button:focus-visible {
+  outline: 2px solid var(--green);
+}
+
+#tbox:focus-visible {
+  outline: 2px solid var(--green);
+}

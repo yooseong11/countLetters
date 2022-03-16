@@ -26,30 +26,37 @@
         <img src="./img/pencil.png" alt="" style="width: 25px; height: 25px" />
         <span>글자수세기</span>
       </h1>
-      <a href="#" target="_blank">
+      <a href="#" target="_blank" title="새창으로 열기">
         <img style="width: 20px; height: 20px" src="img/link.png" alt=""
       /></a>
     </header>
     <main>
       <section class="section1">
+        <h2 style="display: none;">글자수 보여주는 영역</h2>
         <div>
-          <p>공백포함</p>
-          <p id="letters">0</p>
-          <p><span id="byte">0</span> byte</p>
+          <h4>공백포함</h4>
+          <div class="letterinfo">
+            <p><span id="letters">0</span><span> 자</span></p>
+            <p><span id="byte">0</span><span> byte</span></p>
+          </div>
         </div>
-        <div>
-          <p>공백제외</p>
-          <p id="trim_letters">0</p>
-          <p><span id="trim_byte">0</span> byte</p>
+        <div style="padding: 12px">
+          <h4>공백제외</h4>
+          <div class="letterinfo">
+            <p><span id="trim_letters">0</span><span> 자</span></p>
+            <p><span id="trim_byte">0</span><span> byte</span></p>
+          </div>
         </div>
       </section>
       <section class="section2">
-        <textarea
-          name="tbox"
-          id="tbox"
-          wrap="on"
-          placeholder="여기에 내용을 입력하세요!"
-        ></textarea>
+        <label for="tbox">
+          <textarea
+            name="tbox"
+            id="tbox"
+            wrap="on"
+            placeholder="여기에 내용을 입력하세요!"
+          ></textarea>
+        </label>
       </section>
     </main>
     <footer>
