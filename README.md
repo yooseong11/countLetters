@@ -1,8 +1,8 @@
 # countLetters
 
-### “글자수 세기” 네이버 웨일 브라우저 사이드 앱
+### “글자수 세기” 다운로드수 1700명 네이버 웨일 브라우저 사이드 앱
 
-> #사용자600명 #브라우저확장프로그램 #manifest.json #사이드바
+> #웨일브라우저확장프로그램 #manifest.json #사이드바 
 > 
 
 **2022.01, 2주일, 팀원: 2명 (프론트엔드 개발자 - 2명)**
@@ -11,6 +11,9 @@
 
 [웨일 스토어 글자수 세기 다운로드 경로](https://store.whale.naver.com/detail/lfhbnhpghablgmclfncpalmemlecalpg)
 
+
+   - 제작 회고록   
+      - [네이버 웨일 스토어 사이드바 확장프로그램 제작 후기](https://www.notion.so/f971011b0aaf46b2931ffea5ad689d5a)
 
    - 기획
         - 웨일 브라우저 사용중 글자수 세기 사이드 앱이 없어서 직접 제작하기로 결정
