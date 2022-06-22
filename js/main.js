@@ -1,10 +1,8 @@
-const tbox = document.querySelector("#tbox");
+const tbox = document.getElementById("tbox");
 const letters = document.querySelector("#letters");
 const byte = document.querySelector("#byte");
 const trim_letters = document.querySelector("#trim_letters");
 const trim_byte = document.querySelector("#trim_byte");
-const btn_copy = document.querySelector("#btn_copy");
-const btn_remove = document.querySelector("#btn_remove");
 
 const getByteLength = (letters) => {
   let byte = 0;
@@ -26,10 +24,15 @@ tbox.addEventListener("input", (e) => {
 });
 
 // btn footer
-btn_copy.onclick = () => {
-  tbox.select();
-  document.execCommand("copy");
-};
+
+const btn_copy = document.getElementById("btn_copy");
+const btn_remove = document.getElementById("btn_remove");
+
+btn_copy.addEventListener('click', () => {
+  const text = tbox.value;
+  tbox.select()
+  navigator.clipboard.writeText(text)
+});
 
 btn_remove.onclick = () => {
   if (tbox.value.length > 0) {
