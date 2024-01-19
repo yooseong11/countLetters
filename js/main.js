@@ -43,15 +43,3 @@ btn_remove.onclick = () => {
     trim_byte.textContent = "0";
   }
 };
-
-whale.sidebarAction.onClicked.addListener((result) => {
-  // result.opened: 사이드바가 열렸는지 닫혔는지를 알려주는 boolean 값. 열렸으면 true.
-});
-
-document.addEventListener(`visibilitychange`, function () {
-  if (document.visibilityState === `visible`) {
-    // 사이드바가 열렸을 때
-  } else {
-    // 사이드바가 닫혔을 때
-  }
-});
