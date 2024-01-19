@@ -1,4 +1,4 @@
-const tbox = document.getElementById("tbox");
+const userInput = document.getElementById("user_input");
 const letters = document.querySelector("#letters");
 const byte = document.querySelector("#byte");
 const trim_letters = document.querySelector("#trim_letters");
@@ -15,7 +15,7 @@ const getByteLength = (letters) => {
   return byte;
 };
 
-tbox.addEventListener("input", (e) => {
+userInput.addEventListener("input", (e) => {
   letters.textContent = e.target.value.length;
   trim_letters.textContent = e.target.value.replace(/(\s*)/g, "").length;
 
@@ -29,14 +29,14 @@ const btn_copy = document.getElementById("btn_copy");
 const btn_remove = document.getElementById("btn_remove");
 
 btn_copy.addEventListener('click', () => {
-  const text = tbox.value;
-  tbox.select()
+  const text = userInput.value;
+  userInput.select()
   navigator.clipboard.writeText(text)
 });
 
 btn_remove.onclick = () => {
-  if (tbox.value.length > 0) {
-    tbox.value = "";
+  if (userInput.value.length > 0) {
+    userInput.value = "";
     letters.textContent = "0";
     byte.textContent = "0";
     trim_letters.textContent = "0";
