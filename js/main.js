@@ -1,8 +1,8 @@
 const userInput = document.getElementById("user_input");
-const letters = document.querySelector("#letters");
-const byte = document.querySelector("#byte");
-const trim_letters = document.querySelector("#trim_letters");
-const trim_byte = document.querySelector("#trim_byte");
+const letters = document.getElementById("letters");
+const byte = document.getElementById("byte");
+const trim_letters = document.getElementById("trim_letters");
+const trim_byte = document.getElementById("trim_byte");
 
 const getByteLength = (letters) => {
   let byte = 0;
