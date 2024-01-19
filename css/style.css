@@ -81,10 +81,10 @@ main .section1 div p:nth-child(2) {
 #trim_letters{
   font-size: 24px;
 }
+
 /*** main section2 ***/
 main .section2 {
   border-top: 1px solid var(--gray-100);
-  border-bottom: 1px solid var(--gray-100);
   margin-top: 20px;
   font-size: 1rem;
   box-shadow: inset rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
@@ -95,6 +95,7 @@ main .section2 textarea {
   height: 450px;
   width: 100%;
   word-break: break-all;
+  border-bottom: 1px solid var(--gray-100);
 }
 textarea::selection {
   background-color: #02c95d30;
@@ -138,6 +139,6 @@ button:focus-visible {
   outline: 2px solid var(--green);
 }
 
-#tbox:focus-visible {
+#user_input:focus-visible {
   outline: 2px solid var(--green);
 }
