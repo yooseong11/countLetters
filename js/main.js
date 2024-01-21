@@ -1,8 +1,8 @@
-const tbox = document.getElementById("tbox");
-const letters = document.querySelector("#letters");
-const byte = document.querySelector("#byte");
-const trim_letters = document.querySelector("#trim_letters");
-const trim_byte = document.querySelector("#trim_byte");
+const userInput = document.getElementById("user_input");
+const letters = document.getElementById("letters");
+const byte = document.getElementById("byte");
+const trim_letters = document.getElementById("trim_letters");
+const trim_byte = document.getElementById("trim_byte");
 
 const getByteLength = (letters) => {
   let byte = 0;
@@ -15,7 +15,7 @@ const getByteLength = (letters) => {
   return byte;
 };
 
-tbox.addEventListener("input", (e) => {
+userInput.addEventListener("input", (e) => {
   letters.textContent = e.target.value.length;
   trim_letters.textContent = e.target.value.replace(/(\s*)/g, "").length;
 
@@ -29,29 +29,17 @@ const btn_copy = document.getElementById("btn_copy");
 const btn_remove = document.getElementById("btn_remove");
 
 btn_copy.addEventListener('click', () => {
-  const text = tbox.value;
-  tbox.select()
+  const text = userInput.value;
+  userInput.select()
   navigator.clipboard.writeText(text)
 });
 
 btn_remove.onclick = () => {
-  if (tbox.value.length > 0) {
-    tbox.value = "";
+  if (userInput.value.length > 0) {
+    userInput.value = "";
     letters.textContent = "0";
     byte.textContent = "0";
     trim_letters.textContent = "0";
     trim_byte.textContent = "0";
   }
 };
-
-whale.sidebarAction.onClicked.addListener((result) => {
-  // result.opened: 사이드바가 열렸는지 닫혔는지를 알려주는 boolean 값. 열렸으면 true.
-});
-
-document.addEventListener(`visibilitychange`, function () {
-  if (document.visibilityState === `visible`) {
-    // 사이드바가 열렸을 때
-  } else {
-    // 사이드바가 닫혔을 때
-  }
-});
