@@ -142,3 +142,60 @@ button:focus-visible {
 #user_input:focus-visible {
   outline: 2px solid var(--green);
 }
+
+/*** theme, theme switch ***/
+.theme {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  margin: 0 8px;
+}
+
+.switch.on .switch_wrap {
+  background-color: var(--green);
+}
+
+.switch.on .switch_button {
+  transform: translate(24px);
+}
+
+.switch_wrap {
+  position: relative;
+  box-sizing: border-box;
+  width: 52px;
+  height: 28px;
+  border-radius: 28px;
+  background-color: var(--gray-100);
+  padding: 4px;
+}
+
+.switch_button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--white);
+  transition: 0.3s;
+}
+
+body.theme-dark {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+body.theme-dark main .section2 {
+  border-top-color: var(--gray-400);
+  box-shadow: inset rgba(246, 246, 246, 0.1) 0 16px 10px -10px;
+}
+
+body.theme-dark main textarea {
+  border-bottom-color: var(--gray-400);
+}
+
+body.theme-dark main textarea::selection {
+  background-color: #02c95c4d;
+}
