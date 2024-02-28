@@ -1,5 +1,5 @@
 {
-  "manifest_version": 4,
+  "manifest_version": 3,
   "name": "글자수 세기",
   "version": "1.0.3",
   "description": "글자수를 세주는 사이드 앱",
